@@ -18,3 +18,13 @@ button:hover{
     background-color: green;
     transform: scale(1.2);
 }
+
+h2 {
+  display: inline-block; /* Allows transform to work properly */
+  animation: spin 5s linear infinite; /* Apply the animation */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); } /* Start at 0 degrees */
+  100% { transform: rotate(360deg); } /* End at 360 degrees */
+}
